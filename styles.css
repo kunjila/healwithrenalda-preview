@@ -1,0 +1,34 @@
+:root { --cream:#f4efe6; --paper:#fbf8f2; --ink:#2a261f; --muted:#6b6458; --sage:#6b7f62; --sage-deep:#4a5c44; --forest:#243024; --line:rgba(42,38,31,.12); --shadow:0 18px 50px rgba(36,48,36,.08); }
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"Source Sans 3","Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}img{max-width:100%;display:block}a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}.wrap-narrow{width:min(760px,calc(100% - 40px));margin:0 auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(244,239,230,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:74px;gap:24px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:1.15rem;letter-spacing:-.02em;text-decoration:none}
+.logo span{display:block;font-family:"Source Sans 3",sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.logo-lockup{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+nav{display:flex;align-items:center;gap:22px}nav a{text-decoration:none;font-size:.92rem;color:var(--muted)}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;text-decoration:none;font-size:.92rem;font-weight:600;border:1px solid transparent}
+.btn-primary{background:var(--forest);color:#f7f3ea}.btn-ghost{background:transparent;border-color:rgba(42,38,31,.22);color:var(--ink)}
+.btn-lg{padding:14px 24px}.hero-actions,.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero{position:relative;min-height:86vh;display:grid;place-items:end start;color:#f7f3ea;background:#1c241c center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,26,18,.18),rgba(20,26,18,.78))}
+.hero-inner{position:relative;z-index:1;padding:80px 0 72px;width:min(800px,calc(100% - 40px));margin:0 auto 0 7vw}
+.eyebrow{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:#d7cbb6;margin-bottom:16px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;letter-spacing:-.03em;line-height:1.15}
+.hero h1{font-size:clamp(2.4rem,5vw,4.2rem);max-width:14ch}.hero p{margin-top:22px;max-width:46ch;font-size:1.12rem;color:#ece4d6}
+.trust{margin-top:18px;font-size:.82rem;color:#c9bead}
+.section{padding:88px 0}.section-sage{background:#e7eee3}.section-forest{background:var(--forest);color:#f4efe6}
+.label{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:10px}
+h2{font-size:clamp(2rem,3.4vw,2.8rem);margin-bottom:16px}.lede{font-size:1.12rem;color:var(--muted);max-width:58ch}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.photo-renalda.portrait{width:100%;height:520px;border-radius:4px}.portrait-frame figcaption{margin-top:10px;font-size:.78rem;color:var(--muted)}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.card,.plan,.step{background:#fff;border:1px solid var(--line);border-radius:4px;padding:24px}
+.card h3{font-family:Fraunces,Georgia,serif;font-size:1.25rem;margin-bottom:8px}.card p{color:var(--muted)}
+.story{padding:96px 0;background:#e8e1d3}.story p{margin-bottom:16px;font-size:1.08rem}
+.sign{font-family:Fraunces,Georgia,serif;font-style:italic;margin-top:24px;font-size:1.2rem}
+.final{text-align:center}footer{padding:48px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+.disclaimer{max-width:78ch;font-size:.78rem}.page-hero{padding:72px 0 24px}
+.form{display:grid;gap:12px;max-width:420px}.form input,.form select{padding:12px 14px;border:1px solid var(--line);border-radius:6px;font:inherit}
+.mock-banner{background:#243024;color:#f4efe6;font-size:.8rem;text-align:center;padding:8px 16px}
+@media(max-width:900px){nav .hide{display:none}.split,.cards-3{grid-template-columns:1fr}.hero-inner{margin:0 auto}}
